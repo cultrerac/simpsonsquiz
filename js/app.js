@@ -104,12 +104,12 @@ function playerScore() {
 
 function questionNumber() {
     $('#question p').remove();
-    $('#question').append(" " + '<p>' + (currentQuestion +1) + '/10</p>');
+    $('#question').append(" " + '<p>' + (currentQuestion +1) + '/5</p>');
 }
 
 function complete() {
     $('.status').hide();
-    $('#heading').append("<h4>You scored" + " " + score + " " + "out of 10 <br>" + "<div class='restart'><p>Restart</p></div></h4>").hide().fadeIn('400');
+    $('#heading').append("<h4>You scored" + " " + score + " " + "out of 5 <br>" + "<div class='restart'><p>Restart</p></div></h4>").hide().fadeIn('400');
     $('.restart').addClass('quiz-end');
 }
 
